@@ -102,8 +102,6 @@ const seedDatabase = async () => {
         await Country.deleteMany({});
         await PetRequirement.deleteMany({});
 
-        // Next, insert the new data
-        await Country.insertMany(countries);
         // Insert countries and capture the resulting documents
         const insertedCountries = await Country.insertMany(countries);
 

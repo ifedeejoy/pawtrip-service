@@ -32,6 +32,7 @@ export const getRequirementsByCountrySpeciesAndBreed = async (countryCode: strin
 
     return {
         ...generalRequirements,
+        countryCode: country,
         speciesData: specificData
     };
 }
