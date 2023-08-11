@@ -11,7 +11,7 @@ const cors = require('cors');
 const PORT = 3000;
 
 // Database connection
-mongoose.connect(`${process.env.MONGODB_URL}/pawtrip`)
+mongoose.connect(`${process.env.MONGODB_URL}`)
     .then(() => console.log('MongoDB Connected...'))
     .catch((err) => console.log(err));
 
