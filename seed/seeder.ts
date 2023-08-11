@@ -6,7 +6,7 @@ import { Country } from '../src/domain/country/models/Country';
 import { PetRequirement } from '../src/domain/pets/models/PetRequirements';
 
 // Database connection
-mongoose.connect(`mongodb://localhost:27017/pawtrip`)
+mongoose.connect(`${process.env.MONGODB_URL}`)
     .then(() => console.log('MongoDB Connected...'))
     .catch((err) => console.log(err));
 
